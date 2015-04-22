@@ -1,5 +1,8 @@
 require "game_icons/version"
+require 'game_icons/finder'
 
 module GameIcons
-  # Your code goes here...
+  def self.find(name)
+    Finder.new.find(name)
+  end
 end
