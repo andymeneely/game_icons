@@ -6,7 +6,6 @@ require 'game_icons/version'
 Gem::Specification.new do |spec|
   spec.specification_version = 2 if spec.respond_to? :specification_version=
   spec.required_rubygems_version = Gem::Requirement.new('>= 0') if spec.respond_to? :required_rubygems_version=
-  spec.rubygems_version = '2.2.2'
   spec.required_ruby_version = '>= 2.0.0'
 
   spec.name          = "game_icons"
@@ -14,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Andy Meneely"]
   spec.email         = ["andy.meneely@gmail.com"]
   spec.summary       = %q{Icons from game-icons.net}
-  spec.description   = %q{Easy access to scalable, free icons from game-icons.net}
+  spec.description   = %q{Access and manipulate the scalable, free icons of game-icons.net}
   spec.homepage      = "https://github.com/andymeneely/squib"
   spec.license       = "MIT"
 
