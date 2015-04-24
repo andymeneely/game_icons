@@ -8,7 +8,8 @@ module GameIcons
         return unless @@icons.empty?
         resources = File.expand_path('../../resources', File.dirname(__FILE__))
         Dir.glob("#{resources}/**/*.svg").each do |svg|
-          @@icons[File.basename(svg,'.svg')] = svg #chop off .svg
+          name          = File.basename(svg,'.svg').downcase
+          @@icons[name] = svg #chop off .svg
         end
       end
 

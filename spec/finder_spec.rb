@@ -13,6 +13,10 @@ describe GameIcons::Finder do
     expect(subject.find('glass-heart.svg').file).to eq(glass_heart_file)
   end
 
+  it 'ignores case ' do
+    expect(subject.find('GLASS-HEART.svg').file).to eq(glass_heart_file)
+  end
+
   it 'works with symbols too' do
     expect(subject.find(:flame).file).to eq(flame_file)
   end

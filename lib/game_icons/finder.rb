@@ -8,7 +8,7 @@ module GameIcons
     # @example Finder.new.find('glass-heart')
     # Raises an error if the icon could not be found.
     def find(icon)
-      str = icon.to_s
+      str = icon.to_s.downcase
       file = DB.files[str] ||
                DB.files[str.sub(/\.svg$/,'')] ||
                raise("game_icons: could not find icon '#{icon}'")
