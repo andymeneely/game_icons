@@ -2,8 +2,6 @@
 
 RubyGem access to the SVGs on [game-icons.net](http://game-icons.net), an awesome library of free icons.
 
-Note: currently only white-on-black SVGs are supported.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -25,7 +23,7 @@ Or install it yourself as:
 ```ruby
 require 'game_icons'
 
-GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg
+GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg, black-on-white
 GameIcons.get('glass-heart.svg').file # .svg extension allowed too
 GameIcons.get(:flame).file            # symbols work too
 GameIcons.get('glass-heart').to_s     # the SVG string
@@ -40,6 +38,7 @@ GameIcons.get('glass-heart').to_s     # the SVG string
 require 'game_icons' # Be sure to also put this in your Gemfile and run "bundle install"
 svg file: GameIcons.get('glass-heart').file
 ```
+Recoloring for Squib support is [coming soon](https://github.com/andymeneely/squib/issues/65)...
 
 ## We Are Not Game-Icons.net
 
