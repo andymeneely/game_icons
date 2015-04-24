@@ -27,4 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.2'
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'nokogiri'
+  spec.add_development_dependency 'cairo'
+  spec.add_development_dependency 'pango'
+  spec.add_development_dependency 'rsvg2'
 end
