@@ -4,7 +4,7 @@ require 'game_icons'
 # These are tests that will change with each release, but might find brokenness as we go.
 
 describe GameIcons do
-  it('has 1627 svg icons') { expect(GameIcons.names.count).to eq(1627) }
+  it('has 1649 svg icons') { expect(GameIcons.names.count).to eq(1627) }
 
   it 'loads known svg data' do
     exp = <<-EOSVG
