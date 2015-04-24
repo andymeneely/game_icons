@@ -26,8 +26,8 @@ require 'game_icons'
 GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg, black-on-white
 GameIcons.get('glass-heart.svg').file # .svg extension allowed too
 GameIcons.get(:flame).file            # symbols work too
-GameIcons.get('glass-heart').to_s     # the SVG string
-GameIcons.get('glass-heart').to_s     # the SVG string
+GameIcons.get('glass-heart').string   # the SVG string
+GameIcons.get('glass-heart').string   # the SVG string
 ```
 
 ## Working With Squib
