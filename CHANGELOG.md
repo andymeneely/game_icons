@@ -4,11 +4,13 @@ This gem follows [semantic versioning](http://semver.org), with the date of the 
 
 e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
-## v0.1.0 / Unreleased
+## v0.1.0 / 2015-04-23
 
 Hello, world!
 
 Features:
-  * `GameIcons.find` base functionality
+  * `GameIcons.get` base functionality
+  * `GameIcons.names` base functionality
+  * `Icon.recolor` base functionality
 
-Icon library updated to April 13, 2015:
+Icon library updated to April 23, 2015:
