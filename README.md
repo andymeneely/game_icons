@@ -25,12 +25,25 @@ Or install it yourself as:
 ```ruby
 require 'game_icons'
 
-GameIcons.find('glass-heart') # absolute path to glass-heart.svg
+GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg
+GameIcons.get('glass-heart.svg').file # .svg extension allowed too
+GameIcons.get(:flame).file            # symbols work too
+GameIcons.get('glass-heart').to_s     # the SVG string
+GameIcons.get('glass-heart').to_s     # the SVG string
+```
+
+## Working With Squib
+
+[Squib](http://andymeneely.github.io/squib) is my other pet project. Here's some example usage:
+
+```ruby
+require 'game_icons' # Be sure to also put this in your Gemfile and run "bundle install"
+svg file: GameIcons.get('glass-heart').file
 ```
 
 ## We Are Not Game-Icons.net
 
-This is not affiliated with [game-icons.net](http://game-icons.net), an awesome library of free icons.
+This is not affiliated with [game-icons.net](http://game-icons.net). They are awesome library of talented artists who give away their hard work. I'm not them.
 
 ## Contributing
 
