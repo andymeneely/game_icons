@@ -3,5 +3,5 @@ module GameIcons
   # e.g. "0.1.0.20150413.alpha" will eventually become "0.1.0.20150413"
   # Uses semantic versioning: http://semver.org/
   # The date after the semver numbers are the build date take from game-icons.net
-  VERSION = "0.2.0.20150423alpha"
+  VERSION = "0.2.0.20150506"
 end
