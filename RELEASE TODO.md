@@ -1,8 +1,8 @@
 Be sure to remember to do the following for releases. (Copy into a GitHub issue)
 
+ - [ ] Download latest white-on-black icon zip from game_icons
  - [ ] CHANGELOG is written for all new changes
  - [ ] README is updated
- - [ ] Double-check that we have the latest from game-icons.net
  - [ ] Bump version.rb
  - [ ] Do a full rake locally
  - [ ] Travis is passing on dev branch
