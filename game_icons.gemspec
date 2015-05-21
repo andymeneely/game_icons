@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'cairo'
   spec.add_development_dependency 'pango'
   spec.add_development_dependency 'rsvg2'
+  spec.add_development_dependency 'launchy'
 end
