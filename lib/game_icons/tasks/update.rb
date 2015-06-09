@@ -1,6 +1,5 @@
 require 'game_icons'
 require 'open-uri'
-require 'zip'
 
 module GameIcons
   class Update
@@ -10,22 +9,23 @@ module GameIcons
     def self.run
       puts "Downloading..."
       download
-      puts "Unzipping won't work because rubyzip is dumb..."
-      # unzip
+      puts "Unzipping..."
+      unzip
       puts "Done."
     end
 
     private
     def self.download
-      File.open(@@TMP_ZIP, 'w+') do |save_file|
+      File.open("resources/#{@@TMP_ZIP}", 'wb+') do |save_file|
         open(@@URL, 'rb') { |read_file| save_file.write(read_file.read) }
       end
     end
 
-    # def self.unzip
-    #   zf = Zip::File.open('game-icons.net.svg.zip') # FAIL!!
-    #   # puts zf.get_next_entry
-    # end
+    def self.unzip
+      Dir.chdir('./resources/') do
+        `unzip -o game-icons.net.svg.zip`
+      end
+    end
 
   end
 end
