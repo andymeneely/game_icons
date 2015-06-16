@@ -28,6 +28,7 @@ GameIcons.get('glass-heart.svg').file # .svg extension allowed too
 GameIcons.get(:flame).file            # symbols work too
 GameIcons.get('glass-heart').string   # the SVG string
 GameIcons.get('glass-heart').string   # the SVG string
+GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # Recolor the foreground and background to different shades of gray
 ```
 
 ## Working With Squib
@@ -37,12 +38,15 @@ GameIcons.get('glass-heart').string   # the SVG string
 ```ruby
 require 'game_icons' # Be sure to also put this in your Gemfile and run "bundle install"
 svg file: GameIcons.get('glass-heart').file
+svg data: GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string
 ```
 Recoloring for Squib support is [coming soon](https://github.com/andymeneely/squib/issues/65)...
 
 ## We Are Not Game-Icons.net
 
-This is not affiliated with [game-icons.net](http://game-icons.net). They are awesome library of talented artists who give away their hard work. I'm not them.
+This is not affiliated with [game-icons.net](http://game-icons.net). They are awesome, talented artists who give away their hard work. I'm not them.
+
+That said, the Ruby code surroudning this Gem is MIT licensed. The icons themselves are under a [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Be sure to attribute them in your work.
 
 ## Contributing
 
