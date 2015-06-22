@@ -37,8 +37,11 @@ GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # Recolor the 
 
 ```ruby
 require 'game_icons' # Be sure to also put this in your Gemfile and run "bundle install"
-svg file: GameIcons.get('glass-heart').file
-svg data: GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string
+require 'squib'
+
+Squib::Deck.new do
+  svg file: GameIcons.get('glass-heart').file
+end
 ```
 Recoloring for Squib support is [coming soon](https://github.com/andymeneely/squib/issues/65)...
 
