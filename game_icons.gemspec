@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["andy.meneely@gmail.com"]
   spec.summary       = %q{Icons from game-icons.net}
   spec.description   = %q{Access and manipulate the scalable, free icons of game-icons.net}
-  spec.homepage      = "https://github.com/andymeneely/squib"
+  spec.homepage      = "https://github.com/andymeneely/game_icons"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
