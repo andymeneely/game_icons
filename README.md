@@ -40,10 +40,13 @@ require 'game_icons' # Be sure to also put this in your Gemfile and run "bundle 
 require 'squib'
 
 Squib::Deck.new do
+  #You can access just the file
   svg file: GameIcons.get('glass-heart').file
+  #Or you can get the data as a string
+  svg data: GameIcons.get('glass-heart').string
+  svg data: GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string
 end
 ```
-Recoloring for Squib support is [coming soon](https://github.com/andymeneely/squib/issues/65)...
 
 ## We Are Not Game-Icons.net
 
