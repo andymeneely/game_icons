@@ -29,6 +29,8 @@ GameIcons.get(:flame).file            # symbols work too
 GameIcons.get('glass-heart').string   # the SVG string
 GameIcons.get('glass-heart').string   # the SVG string
 GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # Recolor the foreground and background to different shades of gray
+
+GameIcons.names                       # returns an array of all names
 ```
 
 ## Working With Squib
