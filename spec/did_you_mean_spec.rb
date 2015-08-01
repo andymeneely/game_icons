@@ -18,10 +18,6 @@ describe GameIcons::DidYouMean do
       expect(dym.query('ofo', 2)).to eq(%w(foo food))
     end
 
-    it 'finds scrambled letters easily' do
-      expect(dym.query('aataistrb', 2)).to eq(%w(barista bar))
-    end
-
     it ('ignores dashes')      { expect(dym.query('fo-o', 1)).to(eq(%w(foo))) }
     it ('ignores underscores') { expect(dym.query('fo_o', 1)).to eq(%w(foo)) }
     it ('ignores case')        { expect(dym.query('FoO',  1)).to eq(%w(foo)) }
