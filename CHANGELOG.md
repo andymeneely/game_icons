@@ -6,6 +6,7 @@ e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
 ## v0.13.0 / Unreleased
   * Added a "Did you mean..." fuzzy search to the exception handler on `GameIcons.get`
+  * Update for Jul 30 icons
 
 ## v0.12.0 / 2015-07-21
   * Update for Jul 21 icons
