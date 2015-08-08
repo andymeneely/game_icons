@@ -22,7 +22,7 @@ describe GameIcons::Finder do
   end
 
   it 'raises and exception upon not finding it' do
-    expect { subject.find('macguffin')}.to raise_error(start_with("game_icons: could not find icon 'macguffin'"))
+    expect { subject.find('macguffin')}.to raise_error(RuntimeError)
   end
 
 end
