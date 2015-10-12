@@ -7,6 +7,7 @@ e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 ## v0.21.0 / 2015-10-012
   * Update for Oct 9 icons
   * Added a correct_pathdata method for correcting some incompatibility issues with Gimp (and sometimes Inkscape).
+  * The recolor method now supports opacity with fg_opacity and bg_opacity options.
 
 ## v0.20.0 / 2015-10-01
   * Update for Oct 1 icons

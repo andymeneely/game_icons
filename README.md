@@ -28,7 +28,8 @@ GameIcons.get('glass-heart.svg').file # .svg extension allowed too
 GameIcons.get(:flame).file            # symbols work too
 GameIcons.get('glass-heart').string   # the SVG string
 GameIcons.get('glass-heart').string   # the SVG string
-GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # Recolor the foreground and background to different shades of gray
+GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # recolor the foreground and background to different shades of gray
+GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc', fg_opacity: 0.25, bg_opacity: 0.75).string # recolor with opacity c
 
 GameIcons.names                       # returns an array of all names
 ```

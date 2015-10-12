@@ -12,12 +12,14 @@ module GameIcons
       @svgstr ||= File.open(@file) { |f| f.read }
     end
 
-    # Modify the background and foreground colors
-    def recolor(bg: '#000', fg: '#fff')
+    # Modify the background and foreground colors and their opacities
+    def recolor(bg: '#000', fg: '#fff', bg_opacity: "1.0", fg_opacity: "1.0")
       OptionalDeps.require_nokogiri
       doc     = Nokogiri::XML(self.string)
-      doc.css('path')[0]['fill'] = bg # red background
-      doc.css('path')[1]['fill'] = fg # green background
+      doc.css('path')[0]['fill'] = bg # dark backdrop
+      doc.css('path')[1]['fill'] = fg # light drawing
+      doc.css('path')[0]['fill-opacity'] = bg_opacity.to_s # dark backdrop
+      doc.css('path')[1]['fill-opacity'] = fg_opacity.to_s # light drawing
       @svgstr = doc.to_xml
       self
     end
