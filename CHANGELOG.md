@@ -4,6 +4,9 @@ This gem follows [semantic versioning](http://semver.org), with the date of the 
 
 e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
+## v0.22.0 / 2015-10-27
+  * Update for Oct 27 icons
+
 ## v0.21.0 / 2015-10-12
   * Update for Oct 9 icons
   * Added a correct_pathdata method for correcting some incompatibility issues with Gimp (and sometimes Inkscape).
