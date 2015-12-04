@@ -4,7 +4,10 @@ This gem follows [semantic versioning](http://semver.org), with the date of the 
 
 e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
-## v0.25.0 / 2015-12-02
+## v0.25.1 / 2015-12-03
+  * Fix: actually add the icon files. Silly git.
+
+## v0.25.0 / 2015-12-03
   * Update for Dec 2 icons
   * Dev: Upgrade nokogiri to 1.6.7 for Windows issue
 
