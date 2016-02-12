@@ -16,6 +16,7 @@ Each subfolders in this archive correspond to a different contributor :
 - Irongamer, http://ecesisllc.wix.com/home
 - HeavenlyDog, http://www.gnomosygoblins.blogspot.com
 - Lucas
+- Faithtoken, http://fungustoken.deviantart.com
 
 Please, include a mention "Icons made by {author}" in your derivative work.
 
