@@ -32,6 +32,9 @@ GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string # recolor the 
 GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc', fg_opacity: 0.25, bg_opacity: 0.75).string # recolor with opacity c
 
 GameIcons.names                       # returns an array of all names
+GameIcons.get('skill/jeep')           # Add author name to disambiguate names
+GameIcons.get('delapouite/jeep')      # Add author name to disambiguate names
+GameIcons.get('jeep')                 # Behavior undefined for ambiguous names
 ```
 
 ## Working With Squib

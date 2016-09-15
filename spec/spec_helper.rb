@@ -15,6 +15,10 @@ def repo(str)
   "#{File.expand_path('../../', __FILE__)}/#{str}"
 end
 
+def icon_file(str)
+  repo("resources/icons/#{str}")
+end
+
 def data(file)
   repo("spec/data/#{file}")
 end
