@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
 require 'game_icons'
 
-GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg, black-on-white
+GameIcons.get('glass-heart').file     # absolute path to glass-heart.svg, white-on-black
 GameIcons.get('glass-heart.svg').file # .svg extension allowed too
 GameIcons.get(:flame).file            # symbols work too
 GameIcons.get('glass-heart').string   # the SVG string
