@@ -15,6 +15,10 @@ def repo(str)
   "#{File.expand_path('../../', __FILE__)}/#{str}"
 end
 
-def data(str)
-  repo("spec/data/#{str}")
+def data(file)
+  repo("spec/data/#{file}")
+end
+
+def data_string(file)
+  File.open(data(file), 'r').read
 end
