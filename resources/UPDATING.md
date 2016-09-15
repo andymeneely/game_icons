@@ -1,6 +1,5 @@
 # Updating icons
 
-When a new update to game-icons.net comes out, this directory can be updated by:
+Just run "rake update". You'll need "unzip" as an executable on your PATH.
 
-  1. Download the SVG zip file, white-on-black.
-  2. Extract into here, preferably with the same directory structure so individual files can be tracked.
+If you're on Windows, you can get that here: http://info-zip.org/
