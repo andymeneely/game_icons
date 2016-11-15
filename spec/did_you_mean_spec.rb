@@ -28,7 +28,7 @@ describe GameIcons::DidYouMean do
     let(:dym) { GameIcons::DidYouMean.new(GameIcons.names) }
 
     it 'gets glass-heart' do
-      expect(dym.query('glaheart').first).to eq('glass-heart')
+      expect(dym.query('glasheart').first).to eq('glass-heart')
     end
 
   end
