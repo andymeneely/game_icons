@@ -1,5 +1,11 @@
 language: ruby
 sudo: required
 cache: bundler # maybe someday they'll add support for us freeloaders...
+
+addons:
+  apt:
+    packages:
+      - libgirepository1.0-dev # for gobject-introspection
+
 rvm:
   - 2.4.1
