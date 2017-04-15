@@ -11,6 +11,10 @@ end
 
 require 'game_icons'
 
+RSpec.configure do |config|
+  config.color = true  # Use color in STDOUT
+end
+
 def repo(str)
   "#{File.expand_path('../../', __FILE__)}/#{str}"
 end
