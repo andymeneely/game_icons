@@ -2,4 +2,4 @@ language: ruby
 sudo: required
 cache: bundler # maybe someday they'll add support for us freeloaders...
 rvm:
-  - 2.3.1
+  - 2.4
