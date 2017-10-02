@@ -21,8 +21,8 @@ describe GameIcons::Icon do
       exp = <<~EOSVG
         <?xml version="1.0"?>
         <svg>
-          <path fill="123" fill-opacity="1.0"/>
-          <path fill="456" fill-opacity="1.0"/>
+          <path fill="#123" fill-opacity="1.0"/>
+          <path fill="#456" fill-opacity="1.0"/>
         </svg>
       EOSVG
       i = GameIcons::Icon.new(data('foo.svg'))
@@ -33,8 +33,8 @@ describe GameIcons::Icon do
       exp = <<~EOSVG
         <?xml version="1.0"?>
         <svg>
-          <path fill="123" fill-opacity="0.25"/>
-          <path fill="456" fill-opacity="0.12"/>
+          <path fill="#123" fill-opacity="0.25"/>
+          <path fill="#456" fill-opacity="0.12"/>
         </svg>
       EOSVG
       i = GameIcons::Icon.new(data('foo.svg'))
