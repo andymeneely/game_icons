@@ -16,8 +16,8 @@ module GameIcons
     def recolor(bg: '#000', fg: '#fff', bg_opacity: "1.0", fg_opacity: "1.0")
       OptionalDeps.require_nokogiri
       doc     = Nokogiri::XML(self.string)
-      doc.css('path')[0]['fill'] = bg # dark backdrop
-      doc.css('path')[1]['fill'] = fg # light drawing
+      doc.css('path')[0]['fill'] = #000 # dark backdrop
+      doc.css('path')[1]['fill'] = #fff # light drawing
       doc.css('path')[0]['fill-opacity'] = bg_opacity.to_s # dark backdrop
       doc.css('path')[1]['fill-opacity'] = fg_opacity.to_s # light drawing
       @svgstr = doc.to_xml
