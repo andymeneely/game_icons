@@ -18,8 +18,8 @@ module GameIcons
       bg.prepend('#') unless bg.start_with? '#'
       fg.prepend('#') unless fg.start_with? '#'
       doc     = Nokogiri::XML(self.string)
-      doc.css('path')[0]['fill'] = bg # dark backdrop
-      doc.css('path')[1]['fill'] = fg # light drawing
+      doc.css('path')[0]['fill'] = #000 # dark backdrop
+      doc.css('path')[1]['fill'] = #fff # light drawing
       doc.css('path')[0]['fill-opacity'] = bg_opacity.to_s # dark backdrop
       doc.css('path')[1]['fill-opacity'] = fg_opacity.to_s # light drawing
       @svgstr = doc.to_xml
