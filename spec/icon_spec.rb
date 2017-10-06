@@ -17,7 +17,7 @@ describe GameIcons::Icon do
   end
 
   context(:recolor) do
-    it 'recolors regular colors' do
+    it 'recolors regular colors with and without #' do
       exp = <<~EOSVG
         <?xml version="1.0"?>
         <svg>
@@ -26,7 +26,7 @@ describe GameIcons::Icon do
         </svg>
       EOSVG
       i = GameIcons::Icon.new(data('foo.svg'))
-      expect(i.recolor(bg: '#123', fg: '#456').string).to eq(exp)
+      expect(i.recolor(bg: '123', fg: '#456').string).to eq(exp)
     end
 
     it 'recolors with fill opacity too' do

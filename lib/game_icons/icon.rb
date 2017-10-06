@@ -15,6 +15,8 @@ module GameIcons
     # Modify the background and foreground colors and their opacities
     def recolor(bg: '#000', fg: '#fff', bg_opacity: "1.0", fg_opacity: "1.0")
       OptionalDeps.require_nokogiri
+      bg.prepend('#') unless bg.start_with? '#'
+      fg.prepend('#') unless fg.start_with? '#'
       doc     = Nokogiri::XML(self.string)
       doc.css('path')[0]['fill'] = bg # dark backdrop
       doc.css('path')[1]['fill'] = fg # light drawing

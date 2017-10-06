@@ -4,6 +4,10 @@ This gem follows [semantic versioning](http://semver.org), with the date of the 
 
 e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
+## v0.40.0 / Unreleased
+ * Update to Sep 25 icons
+ * Prepend a  `#` to colors on `recolor` if it's not there.
+
 ## v0.39.0 / 2017-07-15
  * Update to latest icons
 
