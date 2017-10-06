@@ -21,24 +21,24 @@ describe GameIcons::Icon do
       exp = <<~EOSVG
         <?xml version="1.0"?>
         <svg>
-          <path fill="123" fill-opacity="1.0"/>
-          <path fill="456" fill-opacity="1.0"/>
+          <path fill="#123" fill-opacity="1.0"/>
+          <path fill="#456" fill-opacity="1.0"/>
         </svg>
       EOSVG
       i = GameIcons::Icon.new(data('foo.svg'))
-      expect(i.recolor(bg: '123', fg: '456').string).to eq(exp)
+      expect(i.recolor(bg: '#123', fg: '#456').string).to eq(exp)
     end
 
     it 'recolors with fill opacity too' do
       exp = <<~EOSVG
         <?xml version="1.0"?>
         <svg>
-          <path fill="123" fill-opacity="0.25"/>
-          <path fill="456" fill-opacity="0.12"/>
+          <path fill="#123" fill-opacity="0.25"/>
+          <path fill="#456" fill-opacity="0.12"/>
         </svg>
       EOSVG
       i = GameIcons::Icon.new(data('foo.svg'))
-      actual = i.recolor(bg: '123', fg: '456',
+      actual = i.recolor(bg: '#123', fg: '#456',
                          bg_opacity:'0.25', fg_opacity:'0.12').string
       expect(actual).to eq(exp)
     end
