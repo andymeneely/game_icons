@@ -2,10 +2,10 @@ require 'game_icons/finder.rb'
 require 'spec_helper'
 
 describe GameIcons::Finder do
-  let(:glass_heart_file) { icon_file("lorc/originals/svg/glass-heart.svg") }
-  let(:flame_file)       { icon_file("carl-olsen/originals/svg/flame.svg") }
-  let(:skoll_jeep)       { icon_file("skoll/originals/svg/jeep.svg") }
-  let(:delapouite_jeep)  { icon_file("delapouite/originals/svg/jeep.svg") }
+  let(:glass_heart_file) { icon_file("lorc/glass-heart.svg") }
+  let(:flame_file)       { icon_file("carl-olsen/flame.svg") }
+  let(:skoll_jeep)       { icon_file("skoll/jeep.svg") }
+  let(:delapouite_jeep)  { icon_file("delapouite/jeep.svg") }
 
   it 'returns the path of a known icon' do
     expect(subject.find('glass-heart').file).to eq(glass_heart_file)
