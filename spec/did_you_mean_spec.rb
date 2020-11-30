@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'game_icons/did_you_mean'
 
 describe GameIcons::DidYouMean do
 

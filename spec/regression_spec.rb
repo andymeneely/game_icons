@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'game_icons'
 
 # These are tests that will change with each release, but might find brokenness as we go.
 

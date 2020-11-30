@@ -1,14 +1,3 @@
-require 'simplecov'
-require 'coveralls'
-
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-  SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
-])
-SimpleCov.start do
-  add_filter "/spec/"
-end
-
 require 'game_icons'
 
 RSpec.configure do |config|
@@ -20,7 +9,7 @@ def repo(str)
 end
 
 def icon_file(str)
-  repo("resources/icons/#{str}")
+  repo("resources/icons/ffffff/000000/1x1/#{str}")
 end
 
 def data(file)

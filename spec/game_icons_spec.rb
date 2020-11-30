@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'game_icons'
 
 describe GameIcons do
   let(:finder) { double(GameIcons::Finder) }

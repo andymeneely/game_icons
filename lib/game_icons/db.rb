@@ -6,7 +6,7 @@ module GameIcons
     class << self # everything here is basically static
       def init
         return unless @@icons.empty?
-        icons_dir = '../../resources/icons'
+        icons_dir = '../../resources/icons/ffffff/000000/1x1'
         resources = File.expand_path(icons_dir, File.dirname(__FILE__))
         Dir.glob("#{resources}/**/*.svg").each do |svg|
           name = File.basename(svg,'.svg').downcase #chop off .svg

@@ -1,4 +1,3 @@
-require 'game_icons/finder.rb'
 require 'spec_helper'
 
 describe GameIcons::Finder do
