@@ -54,6 +54,17 @@ Squib::Deck.new do
 end
 ```
 
+## Updating Locally
+
+Sometimes I fall behind GameIcons in updating. If you want to update your gem locally, you can do the following:
+
+1. Clone the repository
+2. `bundle install`
+2. Edit `version.rb` to be something different for just you (e.g. `0.44.johndoe`)
+3. Run `rake update` from the root of this repo
+4. Run `rake install` to install the new version of the gem.
+5. File bug or pull request to notify me.
+
 ## We Are Not Game-Icons.net
 
 This is not affiliated with [game-icons.net](http://game-icons.net). They are awesome, talented artists who give away their hard work. I'm not them.

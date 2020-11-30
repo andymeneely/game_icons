@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pango'
   spec.add_development_dependency 'rsvg2'
   spec.add_development_dependency 'launchy'
+  spec.add_development_dependency 'rubyzip'
 end

@@ -1,5 +1,6 @@
 require 'game_icons'
 require 'open-uri'
+require 'zip'
 
 module GameIcons
   class Update
@@ -22,8 +23,14 @@ module GameIcons
     end
 
     def self.unzip
+      Zip.on_exists_proc = true #overwrite files if they already exist
       Dir.chdir('./resources/') do
-        `unzip -o game-icons.net.svg.zip`
+        zip_file = Zip::File.new(@@TMP_ZIP)
+        zip_file.each do |entry|
+          fpath = "./#{entry.name}"
+          zip_file.extract(entry, fpath) unless File.exist?(fpath)
+          print '.'
+        end
       end
     end
 
