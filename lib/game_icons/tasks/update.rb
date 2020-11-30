@@ -1,6 +1,7 @@
 require 'game_icons'
 require 'open-uri'
 require 'zip'
+require 'fileutils'
 
 module GameIcons
   class Update
@@ -8,6 +9,8 @@ module GameIcons
     @@TMP_ZIP = 'game-icons.net.svg.zip'
 
     def self.run
+      puts "Clearing..."
+      clear
       puts "Downloading..."
       download
       puts "Unzipping..."
@@ -16,6 +19,12 @@ module GameIcons
     end
 
     private
+
+    def self.clear
+      FileUtils.rm_rf('resources/icons')
+      FileUtils.mkdir('resources/icons')
+    end
+
     def self.download
       File.open("resources/#{@@TMP_ZIP}", 'wb+') do |save_file|
         open(@@URL, 'rb') { |read_file| save_file.write(read_file.read) }
@@ -28,6 +37,7 @@ module GameIcons
         zip_file = Zip::File.new(@@TMP_ZIP)
         zip_file.each do |entry|
           fpath = "./#{entry.name}"
+          FileUtils.mkdir_p File.dirname entry.name
           zip_file.extract(entry, fpath) unless File.exist?(fpath)
           print '.'
         end
