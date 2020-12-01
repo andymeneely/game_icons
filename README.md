@@ -53,6 +53,9 @@ Squib::Deck.new do
   svg data: GameIcons.get('glass-heart').recolor(fg: '333', bg: 'ccc').string
 end
 ```
+## Deep Customization
+
+You can do a whole lot with SVG data once you get it from this library. Take a look at [this PR](https://github.com/andymeneely/game_icons/pull/9) for some inspiration.
 
 ## Updating Locally
 
@@ -64,6 +67,7 @@ Sometimes I fall behind GameIcons in updating. If you want to update your gem lo
 3. Run `rake update` from the root of this repo
 4. Run `rake install` to install the new version of the gem.
 5. File bug or pull request to notify me.
+
 
 ## We Are Not Game-Icons.net
 
