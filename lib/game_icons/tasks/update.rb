@@ -1,11 +1,11 @@
+require 'fileutils'
 require 'game_icons'
 require 'open-uri'
 require 'zip'
-require 'fileutils'
 
 module GameIcons
   class Update
-    @@URL     = 'http://game-icons.net/archives/svg/zip/ffffff/000000/game-icons.net.svg.zip'
+    @@URL     = 'https://game-icons.net/archives/svg/zip/ffffff/000000/game-icons.net.svg.zip'
     @@TMP_ZIP = 'game-icons.net.svg.zip'
 
     def self.run
@@ -27,7 +27,7 @@ module GameIcons
 
     def self.download
       File.open("resources/#{@@TMP_ZIP}", 'wb+') do |save_file|
-        open(@@URL, 'rb') { |read_file| save_file.write(read_file.read) }
+        URI.open(@@URL, 'rb') { |read_file| save_file.write(read_file.read) }
       end
     end
 
