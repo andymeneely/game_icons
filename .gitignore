@@ -16,3 +16,5 @@ mkmf.log
 sanity_test.png
 game-icons.net.svg.zip
 .byebug_history
+
+*.gem
