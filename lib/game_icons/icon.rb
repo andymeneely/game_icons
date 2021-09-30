@@ -29,12 +29,7 @@ module GameIcons
     # Fix an incompatibility issue with Gimp & Inkscape
     # Replaces path strings like "1.5-1.5" with "1.5 -1.5"
     def correct_pathdata
-      10.times do # this is a bit of a hack b/c my regex isn't perfect
-        @svgstr = self.string
-          .gsub(/(\d)\-/,'\1 -')                  # separate negatives
-          .gsub(/(\.)(\d+)(\.)/,'\1\2 \3') # separate multi-decimals
-        end
-      self
+      raise 'DEPRECATED correct_pathdata is no longer necessary'
     end
 
   end

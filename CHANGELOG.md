@@ -4,6 +4,12 @@ This gem follows [semantic versioning](http://semver.org), with the date of the 
 
 e.g. "0.1.0.20150413.alpha" has the April 13, 2015 release of game-icons.net
 
+## v0.45.0 / 2021-09-30
+ * Updated to latest icons
+ * Fixed some deprecated methods in `rake update`
+ * Deprecated correct_pathdata, (no longer needed)
+ * Updated regression test
+
 ## v0.44.0 / 2020-11-30
  * Hey! This still exists, even in 2020
  * Updated to latest icons

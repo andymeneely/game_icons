@@ -45,9 +45,8 @@ describe GameIcons::Icon do
   end
 
   context(:correct_pathdata) do
-    it 'corrects space issue' do
-      exp = data_string('glass-heart-corrected.svg').strip
-      expect(GameIcons.get('glass-heart').correct_pathdata.string).to eq(exp)
+    it 'is deprecated' do
+      expect { GameIcons.get('glass-heart').correct_pathdata }.to raise_error(/DEPRECATED/)
     end
   end
 
